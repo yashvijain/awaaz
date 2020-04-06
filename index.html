@@ -135,6 +135,38 @@ input {
   left: 610px;
   width: 380px;
  }
+	@keyframe loading {
+   0%   {opacity: 0.9; left: 0px; top: 1050px;}
+  25%  {opacity: 0.7; left: 50px; top: 1100px;}
+  50%  {opacity: 0.5; left:  0px; top: 1100px;}
+  75%  {opacity: 0.3; left:  50px; top: 1050px;}
+  100% {opacity: 0.1; left:  0px; top: 1050px;}
+}
+
+@-webkit-keyframes loading {
+  0%   {opacity: 0.9; left: 0px; top: 1050px;}
+  25%  {opacity: 0.7; left: 50px; top: 1100px;}
+  50%  {opacity: 0.5; left:  0px; top: 1100px;}
+  75%  {opacity: 0.3; left:  50px; top: 1050px;}
+  100% {opacity: 0.1; left:  0px; top: 1050px;}
+}
+.circle {
+  color: #DE0E42;
+  font-size: 60px;
+  position: relative;
+  animation-name: loading;
+  opacity: 1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 10;
+  font-weight: bold;
+}
+.container{
+  width: 100wv;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 
 </style>
 </head>
@@ -258,6 +290,8 @@ function newElement() {
     }
   }
 }
+	<div class="container">
+  <div class="circle">जय आवाज़</div>
 </script>
 </body>
 </HEAD>
