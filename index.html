@@ -2,17 +2,14 @@
 <HEAD>
 <TITLE>जय आवाज़ </TITLE>
 <META CHARSET = "utf 8"/>
-
 <style>
 body{
   background: #A8FD9B url(bgfinal.PNG) no-repeat;
   transform-style: preserve-3d;
 }
-
 .mySlides {display:none;}
 .image-slider{left:600px;
 position: absolute;}
-
 #video{
   position: absolute;
   left: 615px;
@@ -32,19 +29,13 @@ position: absolute;}
   left: 1060px;
   top:790px;
 }
-
-/* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
 }
-
-/* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
 }
-
-/* Style the list items */
 ul li {
   cursor: pointer;
   position: relative;
@@ -53,37 +44,27 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  
-  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
-/* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
-
-/* Darker background-color on hover */
 ul li:hover {
   background: #ddd;
 }
-
 .close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
 }
-
 .close:hover {
   background-color: #f44336;
   color: white;
 }
-
-/* Style the header */
 .header {
   background-color: #f44336;
   padding: 30px 40px;
@@ -94,15 +75,11 @@ ul li:hover {
   top: 750px;
   width: 380px;
 }
-
-/* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* Style the input */
 input {
   margin: 0;
   border: none;
@@ -112,8 +89,6 @@ input {
   float: left;
   font-size: 16px;
 }
-
-/* Style the "Add" button */
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -126,7 +101,6 @@ input {
   transition: 0.3s;
   border-radius: 0;
 }
-
 .addBtn:hover {
   background-color: #bbb;
 }
@@ -143,7 +117,6 @@ input {
   75%  {opacity: 0.3; left:  50px; top: 1050px;}
   100% {opacity: 0.1; left:  0px; top: 1050px;}
 }
-
 @-webkit-keyframes loading {
   0%   {opacity: 0.9; left: 0px; top: 1050px;}
   25%  {opacity: 0.7; left: 50px; top: 1100px;}
@@ -173,10 +146,10 @@ input {
   top:1000px;
   background-attachment: fixed;
 }
+ #hover:hover{transform: scale(1.1);}
 </style>
 </head>
 <body>
-
 <div class="image-slider" style="max-width:500px">
   <img class="mySlides" src="p1.png" style="width:100%">
   <img class="mySlides" src="p2.jpg" style="width:100%">
@@ -187,11 +160,9 @@ input {
   <img class="mySlides" src="p7.jpg" style="width:100%">
   <img class="mySlides" src="p8.jpg" style="width:100%">
 </div>
-
 <script>
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -210,29 +181,24 @@ function carousel() {
       वो आवाज़ थी, आवाज़ की <br>
 अनजान थे उस रात हम,<br>
 फिर भी हस कर बात की l <br><br>
-
 मुझे याद है वो आवाज़ भी <br>
 जिसने खोले है राज़ कई <br>
 और वो आवाज़,<br>
 जिसके पास कोई राज़ नहीं <br><br>
-
 मुझे याद है वो आवाज़ भी <br>
 जिसने मिलवाया था हम सबको कभी <br>
 शांत थे उस रात भी, <br>
 है शांत अभी भी, <br>
 उस वक़्त कुछ कहना ना था <br>
 अब कुछ कहने को नहीं <br><br>
-
 मुझे याद हैं वो आवाज़ भी <br>
 आवाज़ के लिए, वो आवाज़ भी <br>
 जो दिलाई थी याद हमें हमारे कर्त्तव्य की <br>
 पंच परमेश्वर के लिए साथ आने की l l<br><br>
-
 मुझे याद है, वो आवाज़ भी <br>
 वो अड्डे की रात भी <br>
 जब सोच रहे थे हम कोई बात नयी <br>
 पर फिर भी खुश थे, जब मिला कुछ नहीं <br><br>
-
 अब परिवार हैं आवाज़ वही,<br>
 आवाज़ है,आवाज़ की l<br>
     </p>  
@@ -243,12 +209,9 @@ function carousel() {
   <input type="text" id="myInput" placeholder="CREATE A MEMORY LANE...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
-
 <ul id="myUL">
 </ul>
-
 <script>
-// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -258,8 +221,6 @@ for (i = 0; i < myNodelist.length; i++) {
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
-
-// Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -268,8 +229,6 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
-
-// Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -281,13 +240,11 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
-
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
@@ -298,12 +255,12 @@ function newElement() {
 </script>
   <div class="container">
   <div class="circle">जय आवाज़</div></div>
-<div class="parallax">
-<img src="r1.PNG" style="width: 550px; height: 200px;"><br>
-<img src="r2.PNG" style="width: 550px; height: 200px;"><br>
-<img src="r3.PNG" style="width: 550px; height: 150px;"><br>
-<img src="r4.PNG" style="width: 550px; height: 200px;"><br>
-<img src="r5.PNG" style="width: 550px; height: 500px;"><br>
+<div class="parallax" >
+<img src="r1.PNG" id ="hover" style="width: 550px; height: 200px;"><br>
+<img src="r2.PNG" id ="hover" style="width: 550px; height: 200px;"><br>
+<img src="r3.PNG" id ="hover" style="width: 550px; height: 150px;"><br>
+<img src="r4.PNG" id ="hover" style="width: 550px; height: 200px;"><br>
+<img src="r5.PNG" id ="hover" style="width: 550px; height: 500px;"><br>
 </div>
 </body>
 </HEAD>
